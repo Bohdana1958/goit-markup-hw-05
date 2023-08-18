@@ -431,22 +431,22 @@
         </div>
         <div class="subscribe-container">
           <p class="subscribe-title title">Subscribe</p>
-          <div class="sbc-container">
-            <form class="form-sbc" name="subscribe-form" autocomplete="off">
+          <form class="form-sbc" name="subscribe-form" autocomplete="off">
+            <label class="sbc-label">
               <input
                 class="input-sbc"
                 type="email"
                 name="email-user"
                 placeholder="E-mail"
               />
-            </form>
+            </label>
             <button class="subscribe-btn button" type="submit">
               Subscribe
               <svg class="icon-sbc" width="24" height="24">
                 <use href="./images/icons.svg#icon-airplane"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -458,77 +458,83 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="leave-title">Leave your contacts and we will call you back</p>
         <!--Leave your contacts and we will call you back  -->
         <form class="form-contact" name="leave_your_contacts" autocomplete="on">
-          <legend class="leave-title">
-            Leave your contacts and we will call you back
-          </legend>
-          <label class="label-contact" name="contact" for="username"
-            >Name</label
-          >
-          <div class="modal-field">
-            <input
-              class="modal-input"
-              type="text"
-              name="username"
-              placeholder=""
-              required
-            />
-            <svg class="modal-icon icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+          <div class="form-field">
+            <label class="label-contact" for="user-name">Name</label>
+            <div class="modal-field">
+              <input
+                id="user-name"
+                class="modal-input"
+                type="text"
+                name="user-name"
+                required
+              />
+              <svg class="modal-icon icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-          <label class="label-contact" for="tel-user" name="contact"
-            >Phone</label
-          >
-          <div class="modal-field">
-            <input class="modal-input" type="tel" name="tel_users" required />
-            <svg class="modal-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+          <div class="form-field">
+            <label class="label-contact" for="tel-user">Phone</label>
+            <div class="modal-field">
+              <input
+                class="modal-input"
+                id="tel-user"
+                type="tel"
+                name="tel_users"
+                required
+              />
+              <svg class="modal-icon icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-          <label class="label-contact" for="contacts-email" name="contact"
-            >Email</label
-          >
-          <div class="modal-field">
-            <input
-              class="modal-input"
-              type="email"
-              name="contacts-email"
-              required
-            />
-            <svg class="modal-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+          <div class="form-field">
+            <label class="label-contact" for="contacts-email">Email</label>
+            <div class="modal-field">
+              <input
+                class="modal-input"
+                type="email"
+                id="contacts-email"
+                name="contacts-email"
+                required
+              />
+              <svg class="modal-icon icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-          <label class="label-contact" for="comment_user" name="contact"
-            >Comment</label
-          >
-          <textarea
-            class="modal-comment"
-            name="comment_user"
-            id="comment_user"
-            rows="8"
-            placeholder="Text input"
-          ></textarea>
+          <div class="form-field-comment">
+            <label class="label-contact" for="user-comment">Comment</label>
+            <textarea
+              class="modal-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="8"
+              placeholder="Text input"
+            ></textarea>
+          </div>
           <div class="modal-agreement">
             <input
               class="privacy-policy visually-hidden"
+              id="user-privacy"
               type="checkbox"
-              name="privacy"
+              name="user-privacy"
               value="true"
             />
-            <label class="modal-privacy">
+            <label class="modal-privacy" for="user-privacy">
               <span class="modal-privacy-description">
                 <svg class="vector icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
-                I accept the terms and conditions of the
-                <a class="link-agreement link" href="">Privacy Policy</a></span
-              >
+              </span>
+              I accept the terms and conditions of the
+              <a class="link-agreement link" href="">Privacy Policy</a>
             </label>
           </div>
-          <button class="hero-btn contacts-btn" type="submit">Send</button>
+          <button class="contacts-btn" type="submit">Send</button>
         </form>
       </div>
     </div>

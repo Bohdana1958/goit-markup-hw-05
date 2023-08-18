@@ -328,17 +328,22 @@
         </div>
         <div class="subscribe-container">
           <p class="subscribe-title title">Subscribe</p>
-          <div class="sbc-container">
-            <form class="form-sbc" name="subscribe-form" autocomplete="off">
-              <label class="label-sbc"for="email-user"></label>
-              <input  class="input-sbc" type="email" name="email-user" placeholder="E-mail">
-            </form>
-            <button class="subscribe-btn button" type="submit">Subscribe
+          <form class="form-sbc" name="subscribe-form" autocomplete="off">
+            <label class="sbc-label">
+              <input
+                class="input-sbc"
+                type="email"
+                name="email-user"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn button" type="submit">
+              Subscribe
               <svg class="icon-sbc" width="24" height="24">
                 <use href="./images/icons.svg#icon-airplane"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
