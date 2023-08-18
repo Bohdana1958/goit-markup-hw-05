@@ -730,7 +730,7 @@ img {
 .subscribe-btn {
   min-width: 165px;
   height: 40px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   background-color: var(--iris, #4d5ae5);
@@ -922,7 +922,7 @@ img {
   border: none;
 }
 
-.privacy-policy:checked + .modal-privacy > .modal-privacy-description .vector {
+.privacy-policy:focus + .vector {
   fill: var(--cloud);
 }
 .modal-privacy-description {
